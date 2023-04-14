@@ -30,7 +30,7 @@ void input()
 void linearSearch()
 {
 	char ch;
-	int comparisson;
+	int comparissons;
 
 	do
 	{
@@ -38,18 +38,23 @@ void linearSearch()
 		int item;
 		cin >> item;
 
-		comparisson= 0;
+		comparissons= 0;
 		for (i = 0; i < n; i++)
 		{
-			comparisson++;
+			comparissons++;
 			if (arr[i] == item)
 			{
 				cout << " \n " << item << " found at position " << (i + 1) << endl;
 				break;
 			}
 		}
-	}
+		if (i == n)
+			cout << "\n" << item << "Not Found In The Array\n";
+		cout << "\nNumber Of Comparissons : " << comparissons << endl;
 
-	if (i == n)
-		cout << "\n" << "Not Found"
+		cout << "\nContinue Search (y/n) ? ";
+		cin >> ch;
+	} while ((ch == 'y') || (ch == 'Y'));	
 }
+
+int
