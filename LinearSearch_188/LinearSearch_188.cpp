@@ -30,19 +30,26 @@ void input()
 void linearSearch()
 {
 	char ch;
-	int comparison;
+	int comparisson;
 
 	do
 	{
 		cout << "\nEnter the element you want to search : ";
 		int item;
+		cin >> item;
 
-		comparison = 0;
-		if (arr[i] == item)
+		comparisson= 0;
+		for (i = 0; i < n; i++)
 		{
-			cout << " \n " << item << " found at position " << (i + 1) << endl;
-			break;
+			comparisson++;
+			if (arr[i] == item)
+			{
+				cout << " \n " << item << " found at position " << (i + 1) << endl;
+				break;
+			}
 		}
 	}
 
+	if (i == n)
+		cout << "\n" << "Not Found"
 }
