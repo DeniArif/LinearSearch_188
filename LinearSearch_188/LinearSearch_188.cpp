@@ -59,5 +59,6 @@ void linearSearch()
 
 int main()
 {
-	input()
+	input();
+	linearSearch();
 }
