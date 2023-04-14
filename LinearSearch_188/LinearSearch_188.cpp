@@ -57,4 +57,4 @@ void linearSearch()
 	} while ((ch == 'y') || (ch == 'Y'));	
 }
 
-int
+int main()
